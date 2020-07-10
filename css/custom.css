@@ -1,0 +1,307 @@
+/**
+фиксы для попап окна
+ */
+.bb-lightbox{
+    height: 100vh!important;
+}
+.bblb-full .bb-lightbox-option-button {
+    font-size: 13px;
+}
+
+.bblb-full .bb-lightbox-fullscreen {
+    display: none;
+}
+
+.bblb-full .bb-lightbox-options {
+    padding: 14px 14px 0 0;
+}
+
+.bb-lightbox-mode-fullscreen .bb-lightbox-cell, .bb-lightbox-mode-fullscreen .bb-lightbox-content, .bb-lightbox-mode-fullscreen .bb-lightbox-slides, .bb-lightbox-mode-fullscreen .bb-lightbox-slide, .bb-lightbox-mode-fullscreen .bb-lightbox-slide-content {
+    overflow: scroll;
+}
+.popup-some{background-color:#fff!important;}
+
+.header-img-item img{max-height:40px!important;}
+.header-img-item img{max-width: 150px;}
+.footer-img-item img{max-height:40px!important;}
+.footer-logo img{max-width:250px;max-height:31px;}
+.header-logo img{max-width:250px;max-height:31px;}
+@media (max-width:767px) {
+    .header-logo.place-header-logo img {
+        max-width: 250px;
+    }
+    .header-logo img {
+        max-width: 100%;
+    }
+}
+.listColumn-2{
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+.listColumn-3{
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+}
+.mt30{margin-top:30px;}
+.ml-30{margin-left:30px;}
+
+/**
+фикс для шапки
+ */
+.header{z-index:1000;}
+
+/**
+фикс для якоря
+ */
+.anchorWrap{
+    position:relative;
+}
+.anchorWrap div{
+    position:absolute;
+    top:-100px;
+}
+
+/**
+фикс для прелоадера виджета instagram
+ */
+.eapps-instagram-feed-posts-grid-load-more{background:none!important;}
+
+/**
+фикс для меню в подвале
+ */
+.footer-nav ul li{
+    margin-right: 10px!important;
+    margin-left: 10px!important;
+}
+
+/**
+фикс для лого организатора
+ */
+.smallog{
+    padding: 3px!important;
+}
+
+/**
+фикс для лого организатора
+ */
+.o-h {
+   overflow: hidden;
+}
+
+/**
+фикс для iframe виджета (не интикетс)
+ */
+.iframeWidget{
+    width: 100%;
+    border: none;
+}
+
+/**
+сниппет разделитель
+ */
+@media (min-width: 768px) {
+    .snippetSpacer {
+        margin-bottom: 50px;
+    }
+}
+@media (min-width: 992px) {
+    .snippetSpacer {
+        margin-bottom: 80px;
+    }
+}
+
+/**
+фикс подчеркивания в футере на мобильных
+ */
+@media (max-width:767px){
+    .footer-nav ul li:before{
+        display:none;
+    }
+}
+
+/**
+фикс для выравнивания надписи об отмене концерта на мобильных
+*/
+@media (max-width:767px) {
+    .banner-info-item-cancel {
+        text-align: center;
+    }
+}
+
+/**
+фикс для попапа с выбором города
+-- start --
+ */
+.popup-change-city li{
+    list-style-type: none;
+    margin-bottom: .75em;
+}
+
+/**
+-- end --
+*/
+
+/**
+стили для обновленных блоков конструктора контента
+-- start --
+*/
+.content-item img,
+.content-item picture {
+    max-width: 100% !important;
+    margin: 10px 0;
+}
+
+@media (min-width: 992px) {
+    .content-item img,
+    .content-item picture {
+        margin: 20px 0;
+    }
+}
+
+.content-item img:last-child,
+.content-item picture:last-child {
+    margin-bottom: 0;
+}
+
+.content-item picture img {
+    margin: 0;
+}
+
+.footer-copy span:before{
+    top: -1px;
+}
+/**
+-- end --
+*/
+
+/**
+фикс для попапа покупки билетов
+-- start --
+ */
+/*.bb-lightbox-slide-content,*/
+.bb-lightbox-content-black-bg,
+.intickets-frame-wrapper {
+    background-color: var(--bgColor);
+}
+/**
+-- end --
+*/
+/**
+fix for dropdown search item map icon
+-- start --
+ */
+.eac-item .ch-wrap > .ch-map-marker{
+    position: relative;
+    padding-left: 20px;
+    font-size: 0.875rem;
+    color: #020304;
+}
+
+.eac-item .ch-wrap > .ch-map-marker:before {
+    content: '\e906';
+    font-family: "icomoon" !important;
+    font-size: 0.875rem;
+    color: #CB2563;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/**
+-- end --
+*/
+
+/**
+fix for agency site tickets no item message
+-- start --
+ */
+.ticketsNoItem{
+    margin-bottom: 80px;
+}
+@media (max-width: 991px) {
+    .ticketsNoItem{
+        margin-bottom: 50px;
+    }
+}
+/**
+fix for agency site tickets no item message
+-- end --
+ */
+
+.bb-lightbox-content .ajax-content .concert-placement-content-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: var(--globalBlack);
+}
+
+.popup-city-body ul li.dist{font-weight:bold;}
+.align-middle {
+    vertical-align: middle;
+}
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+.nbanner-info-img.square-border img {
+    border-radius: 0;
+}
+.js-nban-nav .slick-track {
+    transform: translate3d(0px, 0px, 0px) !important;
+}
+
+/**
+Поиск
+-- start --
+ */
+
+.desktop-content-search{
+    position: relative;
+    text-align: right;
+}
+input.input-search{
+    padding-right: 30px;
+    width: 250px;
+}
+.input-search__btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+    color: var(--grey4);
+    transition: color .2s;
+}
+.input-search__btn:hover{
+    color: var(--grey3);
+}
+.mobile-content-search{
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    margin: 20px auto;
+}
+.mobile-content-search .input-search__btn{
+    right: 40px;
+}
+.mobile-content-search input.input-search{
+    width: calc(100% - 60px);
+    max-width: 320px;
+}
+
+.header-nwrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+ /**
+Поиск
+-- end --
+ */

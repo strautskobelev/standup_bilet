@@ -1,0 +1,302 @@
+@font-face {
+  font-display: block;
+  font-family: 'Bebas Neue';
+  src: local("Bebas Neue Thin"), local("BebasNeue-Thin"), url("../fonts/bebasfont/bebasneuethin.woff2") format("woff2"), url("../fonts/bebasfont/bebasneuethin.woff") format("woff"), url("../fonts/bebasfont/bebasneuethin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: block;
+  font-family: 'Bebas Neue';
+  src: local("Bebas Neue Light"), local("BebasNeue-Light"), url("../fonts/bebasfont/bebasneuelight.woff2") format("woff2"), url("../fonts/bebasfont/bebasneuelight.woff") format("woff"), url("../fonts/bebasfont/bebasneuelight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: block;
+  font-family: 'Bebas Neue';
+  src: local("Bebas Neue Book"), local("BebasNeueBook"), url("../fonts/bebasfont/bebasneuebook.woff2") format("woff2"), url("../fonts/bebasfont/bebasneuebook.woff") format("woff"), url("../fonts/bebasfont/bebasneuebook.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: block;
+  font-family: 'Bebas Neue';
+  src: local("Bebas Neue Regular"), local("BebasNeueRegular"), url("../fonts/bebasfont/bebasneueregular.woff2") format("woff2"), url("../fonts/bebasfont/bebasneueregular.woff") format("woff"), url("../fonts/bebasfont/bebasneueregular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: block;
+  font-family: 'Bebas Neue';
+  src: local("Bebas Neue Bold"), local("BebasNeueBold"), url("../fonts/bebasfont/bebasneuebold.woff2") format("woff2"), url("../fonts/bebasfont/bebasneuebold.woff") format("woff"), url("../fonts/bebasfont/bebasneuebold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --nameBaseFont: $font-main;
+  --thinkFont: 400;
+  --normalFont: 400;
+  --mediumFont: 700;
+  --boldFont: bold;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--normalFont);
+  line-height: 1.4;
+}
+
+p {
+  font-weight: var(--normalFont);
+  line-height: 1.4;
+}
+
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea {
+  font-weight: var(--normalFont);
+}
+
+.pagetitle-item {
+  font-weight: var(--normalFont);
+}
+
+.content-item {
+  font-weight: var(--thinkFont);
+}
+
+.content-data p,
+.content-data a {
+  font-weight: var(--normalFont);
+}
+
+.btn-small, .btn-medium, .btn-big {
+  font-weight: var(--normalFont);
+}
+
+.selectric-lang-select .selectric .label {
+  font-weight: var(--mediumFont);
+}
+
+.header-nav ul li a,
+.mobile-content-menu ul li a {
+  font-weight: var(--mediumFont);
+}
+
+.another-item-info-title a {
+  font-weight: var(--normalFont);
+}
+
+.footer-nav ul li a {
+  font-weight: var(--normalFont);
+}
+
+.footer-copy span {
+  font-weight: var(--thinkFont);
+}
+
+.tickets-title-item {
+  font-weight: var(--normalFont);
+}
+
+.popup-form-row > label,
+.promo-item-title span,
+.tickets-item-date .ch-title,
+.tickets-item-place .ch-title,
+.tickets-item-price .ch-title,
+.tickets-item-btn .ch-title {
+  font-weight: var(--mediumFont);
+}
+
+.tickets-item-date .ch-info,
+.tickets-item-place .ch-info,
+.tickets-item-price .ch-info,
+.tickets-item-btn .ch-info {
+  font-weight: var(--thinkFont);
+  position: relative;
+}
+
+.concert-placement-content-item p {
+  font-weight: var(--thinkFont);
+}
+
+.contacts-grid-name {
+  font-weight: var(--mediumFont);
+}
+
+.content-item ul li:before {
+  top: calc(var(--baseFontSize) / 3.4);
+}
+
+.anchorWrap {
+  position: relative;
+}
+
+.anchorWrap > div {
+  position: absolute;
+  top: -100px;
+}
+
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+input:not([type]),
+textarea {
+  vertical-align: bottom;
+}
+
+.btn-big span,
+.btn-small span,
+.header-nav ul li a,
+.phone-block a,
+.footer-nav ul li a,
+.popup-footer .btn span,
+.popup-title,
+.another-item-info-place span,
+.another-item-info-title a {
+  position: relative;
+  margin-top: calc(var(--baseFontSize) / 5);
+}
+
+.tickets-item-date .ch-title a span,
+.tickets-item-date .ch-info a span,
+.tickets-item-place .ch-title a span,
+.tickets-item-place .ch-info a span,
+.tickets-item-price .ch-title a span,
+.tickets-item-price .ch-info a span,
+.tickets-item-btn .ch-title a span,
+.tickets-item-btn .ch-info a span,
+.banner-info-item-date span {
+  position: relative;
+  margin-top: calc(var(--baseFontSize) / 4);
+}
+
+.phone-block a {
+  vertical-align: bottom !important;
+}
+
+.banner-info-item-mob,
+.top-panel-text-item,
+.footer-nav ul li a,
+.btn-big span,
+.btn-small span,
+.header-nav ul li a,
+.phone-block a,
+.pagetitle-item,
+.tickets-title-item,
+.another-item-info-title a {
+  font-weight: var(--mediumFont);
+}
+
+.pagetitle-item {
+  letter-spacing: .3px;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .pagetitle-item {
+    font-size: 1.875rem;
+  }
+}
+
+.footer-copy span:before {
+  top: 0;
+}
+
+.concert-info-item-title {
+  margin-bottom: calc(var(--baseFontSize) * .5);
+}
+
+.tickets-item-price,
+.tickets-item-place,
+.tickets-item-date {
+  position: relative;
+  margin-bottom: -5px;
+}
+
+@media (min-width: 576px) {
+  .tickets-item-date .ch-title,
+  .tickets-item-place .ch-title,
+  .tickets-item-price .ch-title,
+  .tickets-item-btn .ch-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .tickets-title-item {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .promo-item-title span {
+    font-size: 1.875rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .promo-item-text span {
+    font-size: 1.125rem;
+    font-weight: var(--mediumFont);
+  }
+}
+
+.banner-info-item-date span,
+.banner-info-item-title span {
+  font-weight: var(--mediumFont);
+}
+
+.top-panel-text {
+  position: relative;
+  margin-top: 0.125rem;
+}
+
+.top-panel-text-item {
+  font-size: 0.8125rem;
+}
+
+.btn-big span,
+.btn-small span,
+.top-panel-text-item,
+.promo-item-text span {
+  letter-spacing: 1px;
+}
+
+@media (min-width: 992px) {
+  .banner-info-item-title span {
+    font-size: 2.625rem;
+  }
+}
+
+.banner-info-item-date span:after {
+  top: -1px;
+}
+
+@media (min-width: 992px) {
+  .concert-info-item-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 992px) {
+  .concert-info-item-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+
+.footer-subscribe-form button .icon {
+  position: relative;
+  margin-top: -2px;
+}
+
+/*# sourceMappingURL=font-bebas.min.css.map */

@@ -1,0 +1,225 @@
+:root {
+  --bgColor: #fff;
+  --baseColor: #CB2563;
+  --secondaryColor: #CB2563;
+  --topPanelColor: #000;
+  --footerPanelColor: #000;
+  --topPanelFontColor: #fff;
+  --menuFontColor: #000;
+  --ticketsFontColor: #000;
+  --ticketsFontHoverColor: #CB2563;
+  --contentFontColor: #000;
+  --contentLinkFontColor: #000;
+  --contentLinkFontHoverColor: #CB2563;
+  --titleFontColor: #000;
+  --btnThemeColor: #000;
+  --btnThemeHoverColor: #fff;
+  --footerLinkColor: #fff;
+  --footerLinkHoverColor: #CB2563;
+  --bannerSmalltitle: #fff;
+  --bannerSmalltitleDate: #fff;
+  --bannerBtnColor: #fff;
+  --bannerDateBg: var(--baseColor);
+  --bannerBtnColorHover: var(--bannerBtnColorHover);
+  --bannerBtnHoverBg: var(--baseColor);
+  --bannerBtnBorderColor: #CB2563;
+  --btnThemeBorder: #CB2563;
+  --baseFontSize: 16px;
+  --contentFontSize: 1.125rem;
+  --contentMobFontSize: 1rem;
+  --bColor: #000;
+  --wColor: #fff;
+  --globalWhite: #fff;
+  --globalBlack: #000;
+  --bright: #CB2563;
+  --grey1: #fefefe;
+  --grey2: #f0f0f0;
+  --grey3: #777;
+  --grey4: #f1f1f1;
+  --grey5: #cecdcd;
+  --grey6: #fefefe;
+  --grey7: #555;
+  --grey8: #ececec;
+  --grey9: #212121;
+  --inputBg: var(--globalWhite);
+  --checkBg: var(--globalWhite);
+  --popupTitle: var(--globalWhite);
+  --popupBg: var(--globalWhite);
+  --ticketsBorder: #f0f0f0;
+  --ticketsBorderAcrive: #000;
+  --hrColor: 1px solid rgba(0, 0, 0, 0.1);
+  --btnMobShadow: 0 0 3px 0 rgba(119, 119, 119, 0.14);
+  --headerShadow: 0 0 6px 1px rgba(0, 0, 0, 0.15);
+  --anotherShadow: 0 0 3px 0 rgba(119, 119, 119,.34);
+  --bannerAfterColor: rgba(58, 58, 58, 0.3);
+  --galLinkBefore: rgba(0, 0, 0, .3);
+  --galLinkAfter: rgba(255, 255, 255, .9);
+  --concertInfoAfter: rgba(0, 0, 0, .15);
+  --btnThemeHover: #fff;
+  --footerSocial: var(--globalBlack);
+  --footerSocialHover: var(--globalWhite);
+  --topPanelTxtColor: var(--globalWhite);
+  --yutubePlayBtn: var(--globalWhite);
+  --anotherBorder: var(--grey8);
+  --anotherTxt: var(--grey7);
+  --contactGridBorder: var(--grey2);
+  --popupLabel: var(--grey9);
+  --selectBg: var(--globalWhite);
+  --popupAgree: var(--grey3);
+  --popupBtnColor: var(--globalBlack);
+  --popupBtnColorHover: #fff;
+  --popupSomeBg: #fff;
+  --popupSomeBorder: var(--grey8);
+  --contentInfoBorder: var(--grey2);
+  --concertOpacity: 0.9;
+  --concertInfoTitle: $black;
+  --placeImgGray: 1;
+  --btnFullColor: var(--baseColor);
+  --btnFullColorHover: var(--globalWhite);
+  --btnFullColorText: var(--globalWhite);
+  --btnFullColorTextHover: var(--baseColor);
+  --bgridBgElements: #000;
+  --bgridBgBanner: #fff;
+  --bgridColor: #CB2563;
+}
+
+.top-panel-text-item {
+  color: var(--topPanelFontColor);
+}
+
+.phone-block a,
+.header-nav ul li a,
+.footer-nav ul li a {
+  color: var(--menuFontColor);
+}
+
+.tickets-item-date .ch-title span, .tickets-item-date .ch-title a, .tickets-item-date .ch-info span, .tickets-item-date .ch-info a, .tickets-item-place .ch-title span, .tickets-item-place .ch-title a, .tickets-item-place .ch-info span, .tickets-item-place .ch-info a, .tickets-item-price .ch-title span, .tickets-item-price .ch-title a, .tickets-item-price .ch-info span, .tickets-item-price .ch-info a, .tickets-item-btn .ch-title span, .tickets-item-btn .ch-title a, .tickets-item-btn .ch-info span, .tickets-item-btn .ch-info a {
+  color: var(--ticketsFontColor);
+}
+
+.tickets-item-date .ch-title span:hover, .tickets-item-date .ch-title a:hover, .tickets-item-date .ch-info span:hover, .tickets-item-date .ch-info a:hover, .tickets-item-place .ch-title span:hover, .tickets-item-place .ch-title a:hover, .tickets-item-place .ch-info span:hover, .tickets-item-place .ch-info a:hover, .tickets-item-price .ch-title span:hover, .tickets-item-price .ch-title a:hover, .tickets-item-price .ch-info span:hover, .tickets-item-price .ch-info a:hover, .tickets-item-btn .ch-title span:hover, .tickets-item-btn .ch-title a:hover, .tickets-item-btn .ch-info span:hover, .tickets-item-btn .ch-info a:hover {
+  color: var(--ticketsFontHoverColor) !important;
+}
+
+.tickets-item-date .ch-title span:hover .icon,
+.tickets-item-date .ch-title span:hover span, .tickets-item-date .ch-title a:hover .icon,
+.tickets-item-date .ch-title a:hover span, .tickets-item-date .ch-info span:hover .icon,
+.tickets-item-date .ch-info span:hover span, .tickets-item-date .ch-info a:hover .icon,
+.tickets-item-date .ch-info a:hover span, .tickets-item-place .ch-title span:hover .icon,
+.tickets-item-place .ch-title span:hover span, .tickets-item-place .ch-title a:hover .icon,
+.tickets-item-place .ch-title a:hover span, .tickets-item-place .ch-info span:hover .icon,
+.tickets-item-place .ch-info span:hover span, .tickets-item-place .ch-info a:hover .icon,
+.tickets-item-place .ch-info a:hover span, .tickets-item-price .ch-title span:hover .icon,
+.tickets-item-price .ch-title span:hover span, .tickets-item-price .ch-title a:hover .icon,
+.tickets-item-price .ch-title a:hover span, .tickets-item-price .ch-info span:hover .icon,
+.tickets-item-price .ch-info span:hover span, .tickets-item-price .ch-info a:hover .icon,
+.tickets-item-price .ch-info a:hover span, .tickets-item-btn .ch-title span:hover .icon,
+.tickets-item-btn .ch-title span:hover span, .tickets-item-btn .ch-title a:hover .icon,
+.tickets-item-btn .ch-title a:hover span, .tickets-item-btn .ch-info span:hover .icon,
+.tickets-item-btn .ch-info span:hover span, .tickets-item-btn .ch-info a:hover .icon,
+.tickets-item-btn .ch-info a:hover span {
+  color: var(--ticketsFontHoverColor) !important;
+}
+
+.pagetitle-item,
+.tickets-title-item {
+  color: var(--titleFontColor);
+}
+
+.btn-theme {
+  color: var(--btnThemeColor);
+}
+
+.btn-theme:hover {
+  color: var(--btnThemeHoverColor) !important;
+}
+
+.phone-block a:hover {
+  color: var(--secondaryColor);
+}
+
+.contacts-grid-name,
+.concert-placement-content-address .ch-title,
+.concert-placement-content-address .ch-txt,
+.another-item-info-place span,
+.another-item-info-title a,
+.contacts-grid-work span,
+.concert-placement-content-title,
+.concert-placement-content-item,
+.content-item,
+.promo-item-title,
+.promo-item-text,
+.content,
+.footer-copy span {
+  color: var(--contentFontColor);
+}
+
+.contacts-grid-name a,
+.concert-placement-content-address .ch-title a,
+.concert-placement-content-address .ch-txt a,
+.another-item-info-place span a,
+.another-item-info-title a a,
+.contacts-grid-work span a,
+.concert-placement-content-title a,
+.concert-placement-content-item a,
+.content-item a,
+.promo-item-title a,
+.promo-item-text a,
+.content a,
+.footer-copy span a {
+  color: var(--contentLinkFontColor);
+}
+
+.contacts-grid-name a:hover,
+.concert-placement-content-address .ch-title a:hover,
+.concert-placement-content-address .ch-txt a:hover,
+.another-item-info-place span a:hover,
+.another-item-info-title a a:hover,
+.contacts-grid-work span a:hover,
+.concert-placement-content-title a:hover,
+.concert-placement-content-item a:hover,
+.content-item a:hover,
+.promo-item-title a:hover,
+.promo-item-text a:hover,
+.content a:hover,
+.footer-copy span a:hover {
+  color: var(--contentLinkFontHoverColor);
+  text-decoration: none !important;
+}
+
+.footer-subscribe-form button {
+  border-color: var(--footerLinkColor);
+}
+
+.footer-subscribe-form button:hover {
+  border-color: var(--footerLinkHoverColor);
+}
+
+.footer-subscribe-form button:hover .icon {
+  color: var(--footerLinkHoverColor);
+}
+
+.footer-social-title span,
+.footer-subscribe-title span,
+.footer-social-list ul li a,
+.footer-subscribe-form button .icon {
+  color: var(--footerLinkColor);
+}
+
+.footer-social-list ul li a:hover {
+  color: var(--footerLinkHoverColor);
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+.contacts-grid-list .footer-social-list ul li a {
+  color: var(--globalBlack);
+}
+
+.contacts-grid-list .footer-social-list ul li a:hover {
+  color: var(--baseColor);
+}
+
+/*# sourceMappingURL=theme-light.min.css.map */

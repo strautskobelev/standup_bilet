@@ -1,0 +1,105 @@
+<!-- <script src="js/picturefill.min.js" async></script> -->
+<!-- <script src="//www.youtube.com/iframe_api"></script> -->
+<!-- <script src="js/jquery.yottie.bundled.js"></script> -->
+<!-- <script src="//s3.intickets.ru/interposed-frame.js"></script> -->
+<!-- <script type="text/javascript" src="js/elfsight-instagram-feed.js"></script> -->
+<!-- <script>window.jQuery||document.write('<script src="js/jquery.min.js"><\/script>');</script>
+<script type="text/javascript">
+    var _ba = _ba || []; _ba.push(["aid", "c109ebb5dd2938bf1750abe5bdd3ff1f"]); _ba.push(["host", "standupbilet.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+</script>
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '489295305187053');
+    fbq('track', 'PageView');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-717415484"></script><script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-717415484');
+</script>
+<script>
+    gtag('event', 'page_view', {
+        'send_to': 'AW-717415484',
+        'value': 'replace with value',
+        'items': [{
+        'id': 'replace with value',
+        'location_id': 'replace with value',
+        'google_business_vertical': 'custom'
+        }]
+    });
+</script>
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(57020041, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<script>
+    $(function(){
+        $(document).on('click','.jsFooterSubscribeFormSubmit',function(e){
+            e.preventDefault();
+            var form    =   $(this).closest('form'),
+                wrap    =   form.closest('.popup-form');
+            form.addClass('jsValidateForm');
+            if(document.querySelector('.jsValidateForm').checkValidity()){
+                $.ajax({
+                    method:     'POST',
+                    data:       form.serialize()+'&web_form_submit=1&ajax=y',
+                    url:        '/local/include/ajax/footerSubscribeForm.php',
+                    dataType:   'html',
+                    cache:      false,
+                    success:    function(html){
+                        form.html(html);
+                    }
+                });
+            }else{
+                form.append('<input type="submit" name="web_form_submit" style="display:none;" value="Отправить">');
+                form.find('input[type="submit"]').click();
+            }
+        });
+    });
+</script>
+<script>
+    $(function(){
+        $(document).on('click','.jsFooterDiscountFormSubmit',function(e){
+            e.preventDefault();
+            let form    =   $(this).closest('form'),
+                wrap    =   form.closest('.popup-form'),
+                btn     =   $(this),
+                fakeBtn =   form.find('.jsFooterDiscountFormDisableSubmit');
+            form.addClass('jsValidateForm');
+            if(document.querySelector('.jsValidateForm').checkValidity()){
+                btn.hide();
+                fakeBtn.show();
+                $.ajax({
+                    method:     'POST',
+                    data:       form.serialize()+'&web_form_submit=1&ajax=y',
+                    url:        '/local/include/ajax/discountForm.php',
+                    dataType:   'html',
+                    cache:      false,
+                    success:    function(html){
+                        wrap.html(html);
+                    }
+                });
+            }else{
+                form.append('<input type="submit" name="web_form_submit" style="display:none;" value="Отправить">');
+                form.find('input[type="submit"]').click();
+            }
+        });
+    });
+</script> -->
